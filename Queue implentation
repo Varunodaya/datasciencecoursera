@@ -1,0 +1,84 @@
+import java.util.Scanner;
+import java.util.Arrays;
+
+class Except 
+
+{
+
+public static void main(String args[])
+{
+
+
+TestExcept z = new TestExcept();
+
+System.out.println(z.a+"Enter elements of queue if wanna quit then q");
+
+
+
+//How to call push
+Scanner scan =new Scanner(System.in);
+ while(scan.hasNextInt())
+        {
+            int i = scan.nextInt();
+            z.push(i);
+            System.out.println("Pushed "+ i);
+        }
+        
+        
+
+
+}
+
+
+}
+
+
+
+class TestExcept
+{
+int pointer=0;
+int[] a= new int[3];
+int last=(a.length - 1);
+int e=a.length;
+
+public void TestExcept()
+{
+int pointer=0;
+int[] a= new int[3];
+int last=(a.length - 1);
+int e=a.length;
+}
+
+public void push(int vd)  
+{
+try
+{
+
+a[pointer]= vd;
+System.out.println(Arrays.toString(a));
+if(pointer==(a.length - 1))
+{
+pointer=0;
+}
+else
+{
+pointer++;
+} 
+
+}
+ 
+catch (ArrayIndexOutOfBoundsException e)
+{
+
+TestExcept z = new TestExcept();
+Scanner scan =new Scanner(System.in);
+ while(scan.hasNextInt())
+        {
+            int i = scan.nextInt();
+            z.push(i);
+            System.out.println("Pushed "+ i);
+        }
+}
+}
+
+}
